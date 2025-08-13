@@ -11,7 +11,7 @@ export default function Register() {
     e.preventDefault();
 
     try {
-      await axios.post("https://manager-dashboard-mern.vercel.app/register", {
+      await axios.post("http://localhost:5000/api/auth/register", {
         username,
         password
       });
